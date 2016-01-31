@@ -13,6 +13,7 @@
 		E87EE9401C5E204200E8D2A0 /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE93F1C5E204200E8D2A0 /* Students.swift */; };
 		E87EE9421C5E205A00E8D2A0 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9411C5E205A00E8D2A0 /* StudentInformation.swift */; };
 		E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9431C5E206B00E8D2A0 /* StudentPublicData.swift */; };
+		E87EE9461C5E216100E8D2A0 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9451C5E216100E8D2A0 /* Validators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E87EE93F1C5E204200E8D2A0 /* Students.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Students.swift; sourceTree = "<group>"; };
 		E87EE9411C5E205A00E8D2A0 /* StudentInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
 		E87EE9431C5E206B00E8D2A0 /* StudentPublicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentPublicData.swift; sourceTree = "<group>"; };
+		E87EE9451C5E216100E8D2A0 /* Validators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		E87EE93A1C5E1FA100E8D2A0 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E87EE9451C5E216100E8D2A0 /* Validators.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				E87EE9421C5E205A00E8D2A0 /* StudentInformation.swift in Sources */,
 				4E2CEF5A1C5E1C6A00DCC437 /* AppDelegate.swift in Sources */,
 				E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */,
+				E87EE9461C5E216100E8D2A0 /* Validators.swift in Sources */,
 				E87EE9401C5E204200E8D2A0 /* Students.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
