@@ -32,6 +32,11 @@
 		E87EE9681C5E240A00E8D2A0 /* UdacityDataTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9671C5E240A00E8D2A0 /* UdacityDataTasks.swift */; };
 		E87EE96A1C5E241600E8D2A0 /* UdacityJSONParsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9691C5E241600E8D2A0 /* UdacityJSONParsers.swift */; };
 		E87EE96C1C5E242500E8D2A0 /* UdacityURLRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE96B1C5E242500E8D2A0 /* UdacityURLRequests.swift */; };
+		E87EE96E1C5E251C00E8D2A0 /* ParseClientListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE96D1C5E251C00E8D2A0 /* ParseClientListener.swift */; };
+		E87EE9701C5E252F00E8D2A0 /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE96F1C5E252F00E8D2A0 /* ParseClient.swift */; };
+		E87EE9721C5E254600E8D2A0 /* ParseDataTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9711C5E254600E8D2A0 /* ParseDataTasks.swift */; };
+		E87EE9741C5E255600E8D2A0 /* ParseJSONParsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9731C5E255600E8D2A0 /* ParseJSONParsers.swift */; };
+		E87EE9761C5E256500E8D2A0 /* ParseURLRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9751C5E256500E8D2A0 /* ParseURLRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +70,11 @@
 		E87EE9671C5E240A00E8D2A0 /* UdacityDataTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityDataTasks.swift; sourceTree = "<group>"; };
 		E87EE9691C5E241600E8D2A0 /* UdacityJSONParsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityJSONParsers.swift; sourceTree = "<group>"; };
 		E87EE96B1C5E242500E8D2A0 /* UdacityURLRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityURLRequests.swift; sourceTree = "<group>"; };
+		E87EE96D1C5E251C00E8D2A0 /* ParseClientListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseClientListener.swift; sourceTree = "<group>"; };
+		E87EE96F1C5E252F00E8D2A0 /* ParseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
+		E87EE9711C5E254600E8D2A0 /* ParseDataTasks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseDataTasks.swift; sourceTree = "<group>"; };
+		E87EE9731C5E255600E8D2A0 /* ParseJSONParsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseJSONParsers.swift; sourceTree = "<group>"; };
+		E87EE9751C5E256500E8D2A0 /* ParseURLRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseURLRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +200,11 @@
 		E87EE9561C5E22EC00E8D2A0 /* Parse */ = {
 			isa = PBXGroup;
 			children = (
+				E87EE96D1C5E251C00E8D2A0 /* ParseClientListener.swift */,
+				E87EE96F1C5E252F00E8D2A0 /* ParseClient.swift */,
+				E87EE9711C5E254600E8D2A0 /* ParseDataTasks.swift */,
+				E87EE9731C5E255600E8D2A0 /* ParseJSONParsers.swift */,
+				E87EE9751C5E256500E8D2A0 /* ParseURLRequests.swift */,
 			);
 			name = Parse;
 			sourceTree = "<group>";
@@ -268,15 +283,20 @@
 				E87EE96A1C5E241600E8D2A0 /* UdacityJSONParsers.swift in Sources */,
 				E87EE9661C5E23E900E8D2A0 /* UdacityClient.swift in Sources */,
 				E87EE95C1C5E231700E8D2A0 /* Notifications.swift in Sources */,
+				E87EE9761C5E256500E8D2A0 /* ParseURLRequests.swift in Sources */,
 				E87EE9541C5E224900E8D2A0 /* AlertControllers.swift in Sources */,
+				E87EE96E1C5E251C00E8D2A0 /* ParseClientListener.swift in Sources */,
 				E87EE94A1C5E21ED00E8D2A0 /* LoginViewController.swift in Sources */,
+				E87EE9701C5E252F00E8D2A0 /* ParseClient.swift in Sources */,
 				E87EE9681C5E240A00E8D2A0 /* UdacityDataTasks.swift in Sources */,
+				E87EE9721C5E254600E8D2A0 /* ParseDataTasks.swift in Sources */,
 				E87EE9421C5E205A00E8D2A0 /* StudentInformation.swift in Sources */,
 				4E2CEF5A1C5E1C6A00DCC437 /* AppDelegate.swift in Sources */,
 				E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */,
 				E87EE9621C5E23CD00E8D2A0 /* UdacitySession.swift in Sources */,
 				E87EE9461C5E216100E8D2A0 /* Validators.swift in Sources */,
 				E87EE94E1C5E221400E8D2A0 /* ListViewController.swift in Sources */,
+				E87EE9741C5E255600E8D2A0 /* ParseJSONParsers.swift in Sources */,
 				E87EE9581C5E22FE00E8D2A0 /* Errors.swift in Sources */,
 				E87EE9481C5E21A800E8D2A0 /* RoundBorderButton.swift in Sources */,
 				E87EE9401C5E204200E8D2A0 /* Students.swift in Sources */,
