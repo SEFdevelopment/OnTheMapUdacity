@@ -114,6 +114,7 @@
 				E87EE9391C5E1F9900E8D2A0 /* Views */,
 				E87EE93A1C5E1FA100E8D2A0 /* Helpers */,
 				E87EE93B1C5E1FAB00E8D2A0 /* Resources */,
+				E87EE9781C5E472C00E8D2A0 /* Frameworks */,
 				4E2CEF5D1C5E1C6A00DCC437 /* Main.storyboard */,
 				4E2CEF601C5E1C6A00DCC437 /* Assets.xcassets */,
 				4E2CEF651C5E1C6A00DCC437 /* Info.plist */,
@@ -215,6 +216,13 @@
 			children = (
 			);
 			name = Facebook;
+			sourceTree = "<group>";
+		};
+		E87EE9781C5E472C00E8D2A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +429,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/On",
+					The,
+					Map,
+				);
 				INFOPLIST_FILE = "On The Map/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SEFdevelopment.On-The-Map";
@@ -433,6 +447,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/On",
+					The,
+					Map,
+				);
 				INFOPLIST_FILE = "On The Map/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SEFdevelopment.On-The-Map";

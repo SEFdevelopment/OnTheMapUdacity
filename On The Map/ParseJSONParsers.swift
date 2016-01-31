@@ -34,19 +34,19 @@ class ParseJSONParsers {
         
         for result in results {
             
-            guard let firstName = result["firstName"] as? String else { break }
-            guard let lastName = result["lastName"] as? String else  { break }
+            guard let firstName = result["firstName"] as? String else { continue }
+            guard let lastName = result["lastName"] as? String else  { continue }
             
-            guard let latitude = result["latitude"] as? Double else  { break }
-            guard (latitude >= -90) && (latitude <= 90) else { break }
+            guard let latitude = result["latitude"] as? Double else  { continue }
+            guard (latitude >= -90) && (latitude <= 90) else { continue }
             
-            guard let longitude = result["longitude"] as? Double else  { break }
-            guard (longitude >= -180) && (longitude <= 180) else { break }
+            guard let longitude = result["longitude"] as? Double else  { continue }
+            guard (longitude >= -180) && (longitude <= 180) else { continue }
             
-            guard let mapString = result["mapString"] as? String else  { break }
-            guard let mediaURL = result["mediaURL"] as? String else  { break }
-            guard let objectId = result["objectId"] as? String else  { break }
-            guard let uniqueKey = result["uniqueKey"] as? String else  { break }
+            guard let mapString = result["mapString"] as? String else  { continue }
+            guard let mediaURL = result["mediaURL"] as? String else  { continue }
+            guard let objectId = result["objectId"] as? String else  { continue }
+            guard let uniqueKey = result["uniqueKey"] as? String else  { continue }
             
             var studentInfoDictionary = [String: AnyObject]()
             
