@@ -15,6 +15,12 @@
 		E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9431C5E206B00E8D2A0 /* StudentPublicData.swift */; };
 		E87EE9461C5E216100E8D2A0 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9451C5E216100E8D2A0 /* Validators.swift */; };
 		E87EE9481C5E21A800E8D2A0 /* RoundBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9471C5E21A800E8D2A0 /* RoundBorderButton.swift */; };
+		E87EE94A1C5E21ED00E8D2A0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9491C5E21ED00E8D2A0 /* LoginViewController.swift */; };
+		E87EE94C1C5E21FD00E8D2A0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE94B1C5E21FD00E8D2A0 /* MapViewController.swift */; };
+		E87EE94E1C5E221400E8D2A0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE94D1C5E221400E8D2A0 /* ListViewController.swift */; };
+		E87EE9501C5E222500E8D2A0 /* EnterLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE94F1C5E222500E8D2A0 /* EnterLocationViewController.swift */; };
+		E87EE9521C5E223800E8D2A0 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9511C5E223800E8D2A0 /* PostViewController.swift */; };
+		E87EE9541C5E224900E8D2A0 /* AlertControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9531C5E224900E8D2A0 /* AlertControllers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 		E87EE9431C5E206B00E8D2A0 /* StudentPublicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentPublicData.swift; sourceTree = "<group>"; };
 		E87EE9451C5E216100E8D2A0 /* Validators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		E87EE9471C5E21A800E8D2A0 /* RoundBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBorderButton.swift; sourceTree = "<group>"; };
+		E87EE9491C5E21ED00E8D2A0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E87EE94B1C5E21FD00E8D2A0 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E87EE94D1C5E221400E8D2A0 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E87EE94F1C5E222500E8D2A0 /* EnterLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterLocationViewController.swift; sourceTree = "<group>"; };
+		E87EE9511C5E223800E8D2A0 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		E87EE9531C5E224900E8D2A0 /* AlertControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,12 @@
 		E87EE9381C5E1F9100E8D2A0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E87EE9491C5E21ED00E8D2A0 /* LoginViewController.swift */,
+				E87EE94B1C5E21FD00E8D2A0 /* MapViewController.swift */,
+				E87EE94D1C5E221400E8D2A0 /* ListViewController.swift */,
+				E87EE94F1C5E222500E8D2A0 /* EnterLocationViewController.swift */,
+				E87EE9511C5E223800E8D2A0 /* PostViewController.swift */,
+				E87EE9531C5E224900E8D2A0 /* AlertControllers.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -198,12 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87EE9541C5E224900E8D2A0 /* AlertControllers.swift in Sources */,
+				E87EE94A1C5E21ED00E8D2A0 /* LoginViewController.swift in Sources */,
 				E87EE9421C5E205A00E8D2A0 /* StudentInformation.swift in Sources */,
 				4E2CEF5A1C5E1C6A00DCC437 /* AppDelegate.swift in Sources */,
 				E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */,
 				E87EE9461C5E216100E8D2A0 /* Validators.swift in Sources */,
+				E87EE94E1C5E221400E8D2A0 /* ListViewController.swift in Sources */,
 				E87EE9481C5E21A800E8D2A0 /* RoundBorderButton.swift in Sources */,
 				E87EE9401C5E204200E8D2A0 /* Students.swift in Sources */,
+				E87EE9501C5E222500E8D2A0 /* EnterLocationViewController.swift in Sources */,
+				E87EE94C1C5E21FD00E8D2A0 /* MapViewController.swift in Sources */,
+				E87EE9521C5E223800E8D2A0 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
