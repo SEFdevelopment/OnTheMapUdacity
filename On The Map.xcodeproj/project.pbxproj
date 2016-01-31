@@ -18,6 +18,9 @@
 		4E2CEF5E1C5E1C6A00DCC437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E2CEF601C5E1C6A00DCC437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E2CEF651C5E1C6A00DCC437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87EE93C1C5E1FDD00E8D2A0 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		E87EE93D1C5E1FDD00E8D2A0 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		E87EE93E1C5E1FDD00E8D2A0 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +54,62 @@
 			isa = PBXGroup;
 			children = (
 				4E2CEF591C5E1C6A00DCC437 /* AppDelegate.swift */,
+				E87EE9361C5E1F8000E8D2A0 /* Model */,
+				E87EE9371C5E1F8A00E8D2A0 /* Network stacks */,
+				E87EE9381C5E1F9100E8D2A0 /* ViewControllers */,
+				E87EE9391C5E1F9900E8D2A0 /* Views */,
+				E87EE93A1C5E1FA100E8D2A0 /* Helpers */,
+				E87EE93B1C5E1FAB00E8D2A0 /* Resources */,
 				4E2CEF5D1C5E1C6A00DCC437 /* Main.storyboard */,
 				4E2CEF601C5E1C6A00DCC437 /* Assets.xcassets */,
 				4E2CEF651C5E1C6A00DCC437 /* Info.plist */,
 			);
 			path = "On The Map";
+			sourceTree = "<group>";
+		};
+		E87EE9361C5E1F8000E8D2A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E87EE9371C5E1F8A00E8D2A0 /* Network stacks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Network stacks";
+			sourceTree = "<group>";
+		};
+		E87EE9381C5E1F9100E8D2A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E87EE9391C5E1F9900E8D2A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E87EE93A1C5E1FA100E8D2A0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E87EE93B1C5E1FAB00E8D2A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E87EE93C1C5E1FDD00E8D2A0 /* Roboto-Medium.ttf */,
+				E87EE93D1C5E1FDD00E8D2A0 /* Roboto-Regular.ttf */,
+				E87EE93E1C5E1FDD00E8D2A0 /* Roboto-Thin.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
