@@ -21,6 +21,11 @@
 		E87EE9501C5E222500E8D2A0 /* EnterLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE94F1C5E222500E8D2A0 /* EnterLocationViewController.swift */; };
 		E87EE9521C5E223800E8D2A0 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9511C5E223800E8D2A0 /* PostViewController.swift */; };
 		E87EE9541C5E224900E8D2A0 /* AlertControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9531C5E224900E8D2A0 /* AlertControllers.swift */; };
+		E87EE9581C5E22FE00E8D2A0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9571C5E22FE00E8D2A0 /* Errors.swift */; };
+		E87EE95A1C5E230C00E8D2A0 /* ErrorStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9591C5E230C00E8D2A0 /* ErrorStrings.swift */; };
+		E87EE95C1C5E231700E8D2A0 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE95B1C5E231700E8D2A0 /* Notifications.swift */; };
+		E87EE95E1C5E232400E8D2A0 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE95D1C5E232400E8D2A0 /* Reachability.swift */; };
+		E87EE9601C5E233200E8D2A0 /* StatusCodesChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE95F1C5E233200E8D2A0 /* StatusCodesChecker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		E87EE94F1C5E222500E8D2A0 /* EnterLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterLocationViewController.swift; sourceTree = "<group>"; };
 		E87EE9511C5E223800E8D2A0 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		E87EE9531C5E224900E8D2A0 /* AlertControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertControllers.swift; sourceTree = "<group>"; };
+		E87EE9571C5E22FE00E8D2A0 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		E87EE9591C5E230C00E8D2A0 /* ErrorStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorStrings.swift; sourceTree = "<group>"; };
+		E87EE95B1C5E231700E8D2A0 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		E87EE95D1C5E232400E8D2A0 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		E87EE95F1C5E233200E8D2A0 /* StatusCodesChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusCodesChecker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,13 @@
 		E87EE9371C5E1F8A00E8D2A0 /* Network stacks */ = {
 			isa = PBXGroup;
 			children = (
+				E87EE9571C5E22FE00E8D2A0 /* Errors.swift */,
+				E87EE9591C5E230C00E8D2A0 /* ErrorStrings.swift */,
+				E87EE95B1C5E231700E8D2A0 /* Notifications.swift */,
+				E87EE95F1C5E233200E8D2A0 /* StatusCodesChecker.swift */,
+				E87EE95D1C5E232400E8D2A0 /* Reachability.swift */,
+				E87EE9551C5E22E500E8D2A0 /* Udacity */,
+				E87EE9561C5E22EC00E8D2A0 /* Parse */,
 			);
 			name = "Network stacks";
 			sourceTree = "<group>";
@@ -143,6 +160,20 @@
 				E87EE93E1C5E1FDD00E8D2A0 /* Roboto-Thin.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		E87EE9551C5E22E500E8D2A0 /* Udacity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Udacity;
+			sourceTree = "<group>";
+		};
+		E87EE9561C5E22EC00E8D2A0 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Parse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87EE95C1C5E231700E8D2A0 /* Notifications.swift in Sources */,
 				E87EE9541C5E224900E8D2A0 /* AlertControllers.swift in Sources */,
 				E87EE94A1C5E21ED00E8D2A0 /* LoginViewController.swift in Sources */,
 				E87EE9421C5E205A00E8D2A0 /* StudentInformation.swift in Sources */,
@@ -223,10 +255,14 @@
 				E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */,
 				E87EE9461C5E216100E8D2A0 /* Validators.swift in Sources */,
 				E87EE94E1C5E221400E8D2A0 /* ListViewController.swift in Sources */,
+				E87EE9581C5E22FE00E8D2A0 /* Errors.swift in Sources */,
 				E87EE9481C5E21A800E8D2A0 /* RoundBorderButton.swift in Sources */,
 				E87EE9401C5E204200E8D2A0 /* Students.swift in Sources */,
 				E87EE9501C5E222500E8D2A0 /* EnterLocationViewController.swift in Sources */,
+				E87EE95A1C5E230C00E8D2A0 /* ErrorStrings.swift in Sources */,
+				E87EE9601C5E233200E8D2A0 /* StatusCodesChecker.swift in Sources */,
 				E87EE94C1C5E21FD00E8D2A0 /* MapViewController.swift in Sources */,
+				E87EE95E1C5E232400E8D2A0 /* Reachability.swift in Sources */,
 				E87EE9521C5E223800E8D2A0 /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
