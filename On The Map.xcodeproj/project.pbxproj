@@ -14,6 +14,7 @@
 		E87EE9421C5E205A00E8D2A0 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9411C5E205A00E8D2A0 /* StudentInformation.swift */; };
 		E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9431C5E206B00E8D2A0 /* StudentPublicData.swift */; };
 		E87EE9461C5E216100E8D2A0 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9451C5E216100E8D2A0 /* Validators.swift */; };
+		E87EE9481C5E21A800E8D2A0 /* RoundBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9471C5E21A800E8D2A0 /* RoundBorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		E87EE9411C5E205A00E8D2A0 /* StudentInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentInformation.swift; sourceTree = "<group>"; };
 		E87EE9431C5E206B00E8D2A0 /* StudentPublicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentPublicData.swift; sourceTree = "<group>"; };
 		E87EE9451C5E216100E8D2A0 /* Validators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		E87EE9471C5E21A800E8D2A0 /* RoundBorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		E87EE9391C5E1F9900E8D2A0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E87EE9471C5E21A800E8D2A0 /* RoundBorderButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				4E2CEF5A1C5E1C6A00DCC437 /* AppDelegate.swift in Sources */,
 				E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */,
 				E87EE9461C5E216100E8D2A0 /* Validators.swift in Sources */,
+				E87EE9481C5E21A800E8D2A0 /* RoundBorderButton.swift in Sources */,
 				E87EE9401C5E204200E8D2A0 /* Students.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
