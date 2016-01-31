@@ -18,7 +18,7 @@ class UdacityURLRequests {
     
     // MARK: - METHODS
     
-    // MARK: - Create a session
+    // MARK: - Create an Udacity session with email
     func createUdacitySessionRequest(username username: String, password: String) -> NSMutableURLRequest {
         
         let request = NSMutableURLRequest(URL: NSURL(string: udacityMethodUrlString)!)
@@ -35,6 +35,25 @@ class UdacityURLRequests {
     }
     
     
+    // MARK: - Create a udacity session with Facebook authentification
+    func createUdacitySessionRequestWithFacebookToken(token: String) -> NSMutableURLRequest {
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: udacityMethodUrlString)!)
+        request.HTTPMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let httpBodyDictionary = ["facebook_mobile": ["username": token]]
+        
+        request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(httpBodyDictionary, options: NSJSONWritingOptions())
+        
+        return request
+        
+    }
+    
+    
+    
+    // MARK: - Delete a udacity session made with email
     func deleteUdacitySessionRequest() -> NSMutableURLRequest {
         
         let request = NSMutableURLRequest(URL: NSURL(string: udacityMethodUrlString)!)
@@ -57,7 +76,7 @@ class UdacityURLRequests {
     }
     
     
-    
+    // MARK: - Get udacity public data
     func getUdacityPublicUserDataRequest(userId: String) -> NSMutableURLRequest {
         
         let methodUrlString = "https://www.udacity.com/api/users/" + userId
