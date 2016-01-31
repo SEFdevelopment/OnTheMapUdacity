@@ -50,13 +50,13 @@ extension UdacityClient {
             // 3)
             do {
                 
-                let sessionCreationResult = try self.udacityJSONParsers.parseJSONForCreatingASession(data!)
+                let userId = try self.udacityJSONParsers.parseJSONForCreatingASession(data!)
                 
                 dispatch_async(dispatch_get_main_queue()) {
                     
                     self.hideNetworkActivityIndicator()
                     
-                    self.udacitySession.userId = sessionCreationResult.userId
+                    self.udacitySession.userId = userId
                     
                     self.delegate?.didCreateUdacitySession(withError: nil)
                 }

@@ -139,6 +139,7 @@
 				E87EE95B1C5E231700E8D2A0 /* Notifications.swift */,
 				E87EE95F1C5E233200E8D2A0 /* StatusCodesChecker.swift */,
 				E87EE95D1C5E232400E8D2A0 /* Reachability.swift */,
+				E87EE9771C5E3EA800E8D2A0 /* Facebook */,
 				E87EE9551C5E22E500E8D2A0 /* Udacity */,
 				E87EE9561C5E22EC00E8D2A0 /* Parse */,
 			);
@@ -207,6 +208,13 @@
 				E87EE9751C5E256500E8D2A0 /* ParseURLRequests.swift */,
 			);
 			name = Parse;
+			sourceTree = "<group>";
+		};
+		E87EE9771C5E3EA800E8D2A0 /* Facebook */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Facebook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

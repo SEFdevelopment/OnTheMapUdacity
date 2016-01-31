@@ -10,46 +10,33 @@ import Foundation
 
 class UdacityJSONParsers {
     
-    // MARK: - PROPERTIES
-    lazy var dateFormatter: NSDateFormatter = {
-        
-        let formatter = NSDateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'.'SSSZ"
-        
-        return formatter
-    }()
-    
-    
     // MARK: - METHODS
     
     // MARK: - Creating an Udacity session
     
     /**
-    The JSON returned from the Udacity server should contain an userId and session's expiration date.
+    The JSON returned from the Udacity server should contain an userId and a registered value of true.
     
     - parameter data: Data got from Udacity server after sending an authorization request to it
     
     - throws: CreatingUdacitySessionParsingError
     
-    - returns: Tuple consisting of user id and session expiration date.
+    - returns: User id of the logged-in student.
     */
-    func parseJSONForCreatingASession(data: NSData) throws -> (userId: String, expirationDate: NSDate) {
+    func parseJSONForCreatingASession(data: NSData) throws -> String {
         
         let newData = data.subdataWithRange(NSMakeRange(5, data.length - 5)) /* subset response data! */
         
         let parsedJSON = try NSJSONSerialization.JSONObjectWithData(newData, options: NSJSONReadingOptions.AllowFragments)
         
         guard let account = parsedJSON["account"] as? [String: AnyObject] else { throw Errors.CreatingUdacitySessionParsingError }
+        
+        guard let registered = account["registered"] as? Bool else { throw Errors.CreatingUdacitySessionParsingError }
+        guard registered == true else { throw Errors.CreatingUdacitySessionParsingError }
+        
         guard let userId = account["key"] as? String else { throw Errors.CreatingUdacitySessionParsingError }
         
-        guard let session = parsedJSON["session"] as? [String: AnyObject] else { throw Errors.CreatingUdacitySessionParsingError }
-        guard let expirationDateString = session["expiration"] as? String else { throw Errors.CreatingUdacitySessionParsingError }
-        
-        guard let expirationDate = dateFormatter.dateFromString(expirationDateString) else { throw Errors.CreatingUdacitySessionParsingError }
-        
-        let createdSessionTuple:(userId: String, expirationDate: NSDate) = (userId, expirationDate)
-        
-        return createdSessionTuple
+        return userId
         
     }
     
