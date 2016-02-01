@@ -342,7 +342,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cNU-iz-wXD">
-                                <rect key="frame" x="186" y="90" width="229" height="301"/>
+                                <rect key="frame" x="186" y="87" width="229" height="306"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Udacity" translatesAutoresizingMaskIntoConstraints="NO" id="efd-k7-v0z">
                                         <rect key="frame" x="80" y="0.0" width="70" height="70"/>
@@ -395,16 +395,19 @@
                                             <action selector="SignUpButtonTapped:" destination="EQb-Ce-q6F" eventType="touchUpInside" id="4lC-td-OBO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qh-yI-wZF">
-                                        <rect key="frame" x="42" y="271" width="145" height="30"/>
-                                        <state key="normal" title="Log in with Facebook"/>
-                                        <connections>
-                                            <action selector="FacebookButtonTapped:" destination="EQb-Ce-q6F" eventType="touchUpInside" id="kXH-2Q-l6l"/>
-                                        </connections>
-                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wf3-fX-AEG" customClass="FBSDKLoginButton">
+                                        <rect key="frame" x="0.0" y="271" width="229" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="0hv-Xn-wXg"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Wf3-fX-AEG" secondAttribute="bottom" id="5CW-gn-EVJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wf3-fX-AEG" secondAttribute="trailing" id="87n-RE-aRE"/>
                                     <constraint firstItem="fNO-iN-L7h" firstAttribute="width" secondItem="0iJ-T1-Rmc" secondAttribute="width" id="E9C-Ix-gPL"/>
+                                    <constraint firstItem="Wf3-fX-AEG" firstAttribute="leading" secondItem="cNU-iz-wXD" secondAttribute="leading" id="WT8-E8-751"/>
                                     <constraint firstItem="DHw-JP-xYP" firstAttribute="width" secondItem="fNO-iN-L7h" secondAttribute="width" id="rpw-6R-FkC"/>
                                     <constraint firstItem="Zed-f4-0Y5" firstAttribute="width" secondItem="DHw-JP-xYP" secondAttribute="width" id="uCk-7w-YLC"/>
                                 </constraints>
