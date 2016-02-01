@@ -28,7 +28,8 @@ class UdacityClient {
     weak var delegate: UdacityClientDelegate?
     
     // MARK: - Data tasks
-    var createUdacitySessionTask: NSURLSessionDataTask!
+    var createUdacitySessionWithEmailTask: NSURLSessionDataTask!
+    var createUdacitySessionWithFacebookTokenTask: NSURLSessionDataTask!
     var deleteUdacitySessionTask: NSURLSessionDataTask!
     var getUdacityPublicUserDataTask: NSURLSessionDataTask!
     
@@ -38,11 +39,22 @@ class UdacityClient {
     // MARK: - Create an Udacity session
     func createUdacitySessionWithEmail(email: String, password: String) {
         
-        createUdacitySessionTask = createUdacitySessionDataTaskWithEmail(email, password: password)
+        createUdacitySessionWithEmailTask = createUdacitySessionDataTaskWithEmail(email, password: password)
         
         showNetworkActivityIndicator()
         
-        createUdacitySessionTask.resume()
+        createUdacitySessionWithEmailTask.resume()
+        
+    }
+    
+    
+    func createUdacitySessionWithFacebookToken(token: String) {
+        
+        createUdacitySessionWithFacebookTokenTask = createUdacitySessionDataTaskWithFacebookToken(token)
+        
+        showNetworkActivityIndicator()
+        
+        createUdacitySessionWithFacebookTokenTask.resume()
         
     }
     

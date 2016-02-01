@@ -180,7 +180,7 @@ extension LoginViewController: UITextFieldDelegate {
 extension LoginViewController: UdacityClientDelegate {
     
     // In order to login the following conditions should be fulfilled:
-    // a) A successful session should be created.
+    // a) A successful session should be created, either through email or Facebook token.
     // b) Logged-in user's public data should be successfully fetched from Udacity.
     
     func didCreateUdacitySession(withError error: Errors?) {
