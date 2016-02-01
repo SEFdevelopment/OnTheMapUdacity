@@ -10,9 +10,9 @@
 		4E2CEF5A1C5E1C6A00DCC437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2CEF591C5E1C6A00DCC437 /* AppDelegate.swift */; };
 		4E2CEF5F1C5E1C6A00DCC437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E2CEF5D1C5E1C6A00DCC437 /* Main.storyboard */; };
 		4E2CEF611C5E1C6A00DCC437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E2CEF601C5E1C6A00DCC437 /* Assets.xcassets */; };
-		4E2DF9B61C5FCB91006E74B4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2DF9B41C5FCB91006E74B4 /* FBSDKCoreKit.framework */; };
-		4E2DF9B71C5FCB91006E74B4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2DF9B51C5FCB91006E74B4 /* FBSDKLoginKit.framework */; };
-		4E2DF9BC1C5FFBCB006E74B4 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2DF9BB1C5FFBCB006E74B4 /* Bolts.framework */; };
+		4E9BA9DE1C60082500CF4609 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9BA9DB1C60082500CF4609 /* Bolts.framework */; };
+		4E9BA9DF1C60082500CF4609 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9BA9DC1C60082500CF4609 /* FBSDKCoreKit.framework */; };
+		4E9BA9E01C60082500CF4609 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E9BA9DD1C60082500CF4609 /* FBSDKLoginKit.framework */; };
 		E87EE9401C5E204200E8D2A0 /* Students.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE93F1C5E204200E8D2A0 /* Students.swift */; };
 		E87EE9421C5E205A00E8D2A0 /* StudentInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9411C5E205A00E8D2A0 /* StudentInformation.swift */; };
 		E87EE9441C5E206B00E8D2A0 /* StudentPublicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EE9431C5E206B00E8D2A0 /* StudentPublicData.swift */; };
@@ -48,9 +48,9 @@
 		4E2CEF5E1C5E1C6A00DCC437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E2CEF601C5E1C6A00DCC437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E2CEF651C5E1C6A00DCC437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E2DF9B41C5FCB91006E74B4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		4E2DF9B51C5FCB91006E74B4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		4E2DF9BB1C5FFBCB006E74B4 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		4E9BA9DB1C60082500CF4609 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = SOURCE_ROOT; };
+		4E9BA9DC1C60082500CF4609 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
+		4E9BA9DD1C60082500CF4609 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
 		E87EE93C1C5E1FDD00E8D2A0 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		E87EE93D1C5E1FDD00E8D2A0 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		E87EE93E1C5E1FDD00E8D2A0 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
@@ -88,9 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E2DF9BC1C5FFBCB006E74B4 /* Bolts.framework in Frameworks */,
-				4E2DF9B71C5FCB91006E74B4 /* FBSDKLoginKit.framework in Frameworks */,
-				4E2DF9B61C5FCB91006E74B4 /* FBSDKCoreKit.framework in Frameworks */,
+				4E9BA9DE1C60082500CF4609 /* Bolts.framework in Frameworks */,
+				4E9BA9DF1C60082500CF4609 /* FBSDKCoreKit.framework in Frameworks */,
+				4E9BA9E01C60082500CF4609 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +222,9 @@
 		E87EE9781C5E472C00E8D2A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E2DF9BB1C5FFBCB006E74B4 /* Bolts.framework */,
-				4E2DF9B41C5FCB91006E74B4 /* FBSDKCoreKit.framework */,
-				4E2DF9B51C5FCB91006E74B4 /* FBSDKLoginKit.framework */,
+				4E9BA9DB1C60082500CF4609 /* Bolts.framework */,
+				4E9BA9DC1C60082500CF4609 /* FBSDKCoreKit.framework */,
+				4E9BA9DD1C60082500CF4609 /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -433,14 +433,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/On",
-					The,
-					Map,
-					"$(PROJECT_DIR)/On",
-					The,
-					Map,
+					"$(PROJECT_DIR)/",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "On The Map/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -454,14 +451,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/On",
-					The,
-					Map,
-					"$(PROJECT_DIR)/On",
-					The,
-					Map,
+					"$(PROJECT_DIR)/",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "On The Map/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
