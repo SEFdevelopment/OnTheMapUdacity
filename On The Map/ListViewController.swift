@@ -135,6 +135,8 @@ class ListViewController: UITableViewController {
         
         if segue.identifier == logOutSegueIdentifier {
             
+            viewControllerVisible = false
+            
             parseClient.cancelDataTasks()
             
         }

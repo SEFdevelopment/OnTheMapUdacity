@@ -120,6 +120,8 @@ class MapViewController: UIViewController {
         
         if segue.identifier == logOutSegueIdentifier {
             
+            viewControllerVisible = false
+            
             parseClient.cancelDataTasks()
             
         }

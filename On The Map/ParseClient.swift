@@ -28,10 +28,7 @@ class ParseClient {
     var getStudentLocationsTask: NSURLSessionDataTask!
     var queryStudentLocationTask: NSURLSessionDataTask!
     var updateStudentLocationTask: NSURLSessionDataTask!
-    var refreshStudentLocationTask: NSURLSessionDataTask!
     var postStudentLocationTask: NSURLSessionDataTask!
-    
-    
     
     
     // MARK: - METHODS
@@ -52,23 +49,15 @@ class ParseClient {
     
     func refreshStudentLocations() {
         
+        getStudentLocations()
         
-        refreshStudentLocationTask = getStudentLocationsDataTask()
-        
-        showNetworkActivityIndicator()
-        
-        isGettingDataFromNetwork = true
-        
-        refreshStudentLocationTask.resume()
-        
-        
+
     }
     
     
     func cancelDataTasks() {
         
         getStudentLocationsTask?.cancel()
-        refreshStudentLocationTask?.cancel()
         
         isGettingDataFromNetwork = false
         
