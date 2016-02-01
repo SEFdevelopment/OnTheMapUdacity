@@ -89,6 +89,7 @@ extension UdacityClient {
                 
             }
             
+            
             // 2)
             guard (error == nil) && (data != nil) && (response != nil) else { didGetCreateUdacitySession(withError: Errors.DataTaskCompletionHandlerError); return }
             

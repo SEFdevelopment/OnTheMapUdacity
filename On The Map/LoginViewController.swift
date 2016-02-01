@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 // MARK: - CLASS
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController  {
     
     // MARK: - PROPERTIES
     
@@ -18,7 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loadingView: UIView!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var facebookLoginButton: FBSDKLoginButton!
+        
     // MARK: - Alerts
     lazy var alerts = AlertControllers()
     
@@ -28,6 +31,9 @@ class LoginViewController: UIViewController {
     // MARK: - Udacity sessions
     lazy var udacityClient = UdacityClient()
     lazy var udacitySession = UdacitySession.sharedInstance
+    
+    // MARK: - Facebook login manager
+    lazy var facebookLoginManager = FBSDKLoginManager()
     
     // MARK: - Parse client
     lazy var parseClient = ParseClient()
@@ -49,6 +55,15 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         udacityClient.delegate = self
+        facebookLoginButton.delegate = self
+        
+        
+        // According to the description, the app does not store any sessions. As a result on first start the user will be logged out.
+        if let _ = FBSDKAccessToken.currentAccessToken() {
+            
+           facebookLoginManager.logOut()
+            
+        }
         
     }
     
@@ -122,10 +137,19 @@ class LoginViewController: UIViewController {
     // MARK: - Unwind segues
     @IBAction func logOut(segue: UIStoryboardSegue) {
         
+        // Cancel any active downloads
         parseClient.cancelDataTasks()
         
-        udacityClient.deleteUdacitySession()
-        
+        // Authorization made through Facebook
+        if let _ = FBSDKAccessToken.currentAccessToken() {
+            
+            facebookLoginManager.logOut()
+            
+        } else {
+        // Authorization made via email
+            udacityClient.deleteUdacitySession()
+            
+        }
         
     }
     
@@ -215,6 +239,47 @@ extension LoginViewController: UdacityClientDelegate {
         hideLoadingView()
         
         performSegueWithIdentifier(successfulLoginSegue, sender: self)
+        
+    }
+    
+}
+
+
+// MARK: - Facebook login button delegate
+extension LoginViewController: FBSDKLoginButtonDelegate {
+    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        
+        guard error == nil else {
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                
+                self.hideLoadingView()
+                
+                self.showLoginErrorAlert()
+                
+            }
+            
+            return
+        }
+        
+        let currentAccessTokenString = FBSDKAccessToken.currentAccessToken().tokenString
+        
+        dispatch_async(dispatch_get_main_queue()) {
+            
+            self.showLoadingView()
+            
+            self.udacityClient.createUdacitySessionWithFacebookToken(currentAccessTokenString)
+            
+        }
+        
+    }
+    
+    
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        
+        udacitySession.userId = ""
+        
         
     }
     

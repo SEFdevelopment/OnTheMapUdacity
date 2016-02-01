@@ -43,7 +43,7 @@ class UdacityURLRequests {
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let httpBodyDictionary = ["facebook_mobile": ["username": token]]
+        let httpBodyDictionary = ["facebook_mobile": ["access_token": token]]
         
         request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(httpBodyDictionary, options: NSJSONWritingOptions())
         

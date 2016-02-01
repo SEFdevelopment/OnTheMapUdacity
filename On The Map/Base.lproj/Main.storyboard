@@ -439,6 +439,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="lcT-zT-ZHL" id="AVV-em-DO3"/>
+                        <outlet property="facebookLoginButton" destination="Wf3-fX-AEG" id="uRh-5w-eyc"/>
                         <outlet property="loadingView" destination="C6Y-1F-UNR" id="c4m-Ig-gp4"/>
                         <outlet property="passwordTextField" destination="DHw-JP-xYP" id="p33-Ks-EEN"/>
                         <outlet property="userNameTextField" destination="Zed-f4-0Y5" id="wyC-t2-nlJ"/>
