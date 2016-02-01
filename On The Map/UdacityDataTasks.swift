@@ -24,9 +24,9 @@ extension UdacityClient {
     
     
     // MARK: - Create an Udacity session data task
-    func createUdacitySessionDataTask(username username: String, password: String) -> NSURLSessionDataTask {
+    func createUdacitySessionDataTaskWithEmail(email: String, password: String) -> NSURLSessionDataTask {
         
-        let request = udacityURLRequests.createUdacitySessionRequest(username: username, password: password)
+        let request = udacityURLRequests.createUdacitySessionRequestWithEmail(email, password: password)
         
         let task = session.dataTaskWithRequest(request) { data, response, error in
             

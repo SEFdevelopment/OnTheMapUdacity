@@ -36,9 +36,9 @@ class UdacityClient {
     // MARK: - METHODS
     
     // MARK: - Create an Udacity session
-    func createUdacitySession(username username: String, password: String) {
+    func createUdacitySessionWithEmail(email: String, password: String) {
         
-        createUdacitySessionTask = createUdacitySessionDataTask(username: username, password: password)
+        createUdacitySessionTask = createUdacitySessionDataTaskWithEmail(email, password: password)
         
         showNetworkActivityIndicator()
         

@@ -57,9 +57,9 @@ class LoginViewController: UIViewController {
         
         view.endEditing(true)
         
-        if let username = userNameTextField.text, password = passwordTextField.text {
+        if let email = userNameTextField.text, password = passwordTextField.text {
             
-            if username.isEmpty || password.isEmpty {
+            if email.isEmpty || password.isEmpty {
                 
                 showEmptyUsernameOrPasswordAlert()
                 
@@ -69,7 +69,7 @@ class LoginViewController: UIViewController {
                     
                     showLoadingView()
                     
-                    udacityClient.createUdacitySession(username: username, password: password)
+                    udacityClient.createUdacitySessionWithEmail(email, password: password)
                     
                 } else {
                     

@@ -19,14 +19,14 @@ class UdacityURLRequests {
     // MARK: - METHODS
     
     // MARK: - Create an Udacity session with email
-    func createUdacitySessionRequest(username username: String, password: String) -> NSMutableURLRequest {
+    func createUdacitySessionRequestWithEmail(email: String, password: String) -> NSMutableURLRequest {
         
         let request = NSMutableURLRequest(URL: NSURL(string: udacityMethodUrlString)!)
         request.HTTPMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let httpBodyDictionary = ["udacity": ["username": username, "password": password]]
+        let httpBodyDictionary = ["udacity": ["username": email, "password": password]]
         
         request.HTTPBody = try! NSJSONSerialization.dataWithJSONObject(httpBodyDictionary, options: NSJSONWritingOptions())
         
