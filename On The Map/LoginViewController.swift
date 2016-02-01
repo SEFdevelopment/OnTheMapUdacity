@@ -189,7 +189,7 @@ extension LoginViewController: UdacityClientDelegate {
             
             loadingView.hidden = true
             
-            presentViewController(alerts.wrongCredentialsAlert(), animated: true, completion: nil)
+            showWrongUserNameOrPasswordAlert()
             
             return
             
@@ -206,7 +206,7 @@ extension LoginViewController: UdacityClientDelegate {
             
             loadingView.hidden = true
             
-            presentViewController(alerts.loginErrorAlert(), animated: true, completion: nil)
+            showLoginErrorAlert()
             
             return
             
@@ -234,6 +234,13 @@ extension LoginViewController {
     func showWrongUserNameOrPasswordAlert() {
         
         presentViewController(alerts.wrongCredentialsAlert(), animated: true, completion: nil)
+        
+    }
+    
+    
+    func showLoginErrorAlert() {
+        
+        presentViewController(alerts.loginErrorAlert(), animated: true, completion: nil)
         
     }
     

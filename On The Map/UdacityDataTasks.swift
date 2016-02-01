@@ -23,10 +23,56 @@ extension UdacityClient {
     // b) Otherwise tell the delegate that there was a DataTaskCompletionHandler error, so that it can show for example an alert to user and ask to try again.
     
     
-    // MARK: - Create an Udacity session data task
+    // MARK: - Create an Udacity session data task using email for authentification
     func createUdacitySessionDataTaskWithEmail(email: String, password: String) -> NSURLSessionDataTask {
         
         let request = udacityURLRequests.createUdacitySessionRequestWithEmail(email, password: password)
+        
+        let task = session.dataTaskWithRequest(request) { data, response, error in
+            
+            // 1)
+            func didGetCreateUdacitySession(withError error: Errors) {
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    
+                    self.hideNetworkActivityIndicator()
+                    
+                    self.delegate?.didCreateUdacitySession(withError: error)
+                    
+                }
+                
+            }
+            
+            // 2)
+            guard (error == nil) && (data != nil) && (response != nil) else { didGetCreateUdacitySession(withError: Errors.DataTaskCompletionHandlerError); return }
+            
+            
+            // 3)
+            do {
+                
+                let userId = try self.udacityJSONParsers.parseJSONForCreatingASession(data!)
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    
+                    self.hideNetworkActivityIndicator()
+                    
+                    self.udacitySession.userId = userId
+                    
+                    self.delegate?.didCreateUdacitySession(withError: nil)
+                }
+                
+                
+            } catch { didGetCreateUdacitySession(withError: Errors.DataTaskCompletionHandlerError) }
+            
+        }
+        
+        return task
+    }
+    
+    // MARK: - Create an Udacity session data task using Facebook token for authentification
+    func createUdacitySessionDataTaskWithFacebookToken(token: String) -> NSURLSessionDataTask {
+        
+        let request = udacityURLRequests.createUdacitySessionRequestWithFacebookToken(token)
         
         let task = session.dataTaskWithRequest(request) { data, response, error in
             
