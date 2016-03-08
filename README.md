@@ -8,8 +8,7 @@ Add your current location to a map of locations for other nanodegree students. A
 * UIKit
 * Foundation
 * SystemConfiguration
-* FBSDKCoreKit
-* FBSDKLoginKit
+* FBSDKCoreKit and FBSDKLoginKit (for authentification via Facebook)
 * Networking via NSURLSession
 * Concurrency via GCD
 
@@ -23,3 +22,5 @@ Add your current location to a map of locations for other nanodegree students. A
 * Error handling
 * Facade
 
+## Installation and known issues
+It is possible to get the following error during compile: "No such module 'FBSDKCoreKit'", which seems to be a bug related to the framework itself. To overcome this error add the Facebook frameworks manually to the project.
