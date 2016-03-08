@@ -11,13 +11,15 @@ Add your current location to a map of locations for other nanodegree students. A
 * FBSDKCoreKit
 * FBSDKLoginKit
 * Networking via NSURLSession
+* Concurrency via GCD
 
 
-## Adopted Cocoa design patterns
+## Adopted design patterns
 * MVC
 * Target-Action
 * Delegation
 * Singleton
 * Lazy initialization
 * Error handling
+* Facade
 
