@@ -11,7 +11,7 @@ Add your current location to a map of locations for other nanodegree students. A
 ## Installation and known issues
 It is possible to get the following error during compile: "No such module 'FBSDKCoreKit'", which seems to be, according many comments, a bug related to the framework itself. To overcome this error do the following:
 * Delete the framework files from the project
-* Add the framework files manually according to the following instructions: https://developers.facebook.com/docs/ios/getting-started (Bolts, CoreKit, LoginKit).
+* Add the framework files manually according to the following instructions: https://developers.facebook.com/docs/ios/getting-started (libraries to be added: Bolts, CoreKit, LoginKit).
 
 ## iOS frameworks and technologies used
 * UIKit
