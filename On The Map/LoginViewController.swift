@@ -263,7 +263,9 @@ extension LoginViewController: FBSDKLoginButtonDelegate {
             return
         }
         
-        let currentAccessTokenString = FBSDKAccessToken.currentAccessToken().tokenString
+        guard let currentAccessToken = FBSDKAccessToken.currentAccessToken() else { return }
+        
+        guard let currentAccessTokenString = currentAccessToken.tokenString else { return }
         
         dispatch_async(dispatch_get_main_queue()) {
             
