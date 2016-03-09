@@ -19,6 +19,7 @@ It is possible to get the following error during compile: "No such module 'FBSDK
 
 ## iOS frameworks and technologies used
 * UIKit
+* Auto Layout
 * Foundation
 * Map Kit
 * Core Location
