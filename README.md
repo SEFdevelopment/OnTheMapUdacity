@@ -26,6 +26,7 @@ Add your current location to a map of locations for other nanodegree students. A
 * Singleton
 * Lazy initialization
 * Error handling
+* Notifications
 * Facade
 
 ## Installation and known issues
