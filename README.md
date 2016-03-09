@@ -11,6 +11,8 @@ Add your current location to a map of locations for other nanodegree students. A
 ## iOS frameworks and technologies used
 * UIKit
 * Foundation
+* Map Kit
+* Core Location
 * SystemConfiguration
 * FBSDKCoreKit and FBSDKLoginKit (for authentification via Facebook)
 * Networking via NSURLSession
