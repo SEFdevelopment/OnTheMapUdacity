@@ -8,6 +8,11 @@ Add your current location to a map of locations for other nanodegree students. A
 * https://github.com/udacity/Project-Descriptions-for-Review/blob/master/iOS/On%20the%20Map.md
 * https://itunes.apple.com/us/app/on-the-map-portfolio-app/id994619554?mt=8
 
+## Installation and known issues
+It is possible to get the following error during compile: "No such module 'FBSDKCoreKit'", which seems to be, according many comments, a bug related to the framework itself. To overcome this error do the following:
+* Delete the framework files from the project
+* Add the framework files manually according to the following instructions: https://developers.facebook.com/docs/ios/getting-started (Bolts, CoreKit, LoginKit).
+
 ## iOS frameworks and technologies used
 * UIKit
 * Foundation
@@ -29,5 +34,3 @@ Add your current location to a map of locations for other nanodegree students. A
 * Notifications
 * Facade
 
-## Installation and known issues
-It is possible to get the following error during compile: "No such module 'FBSDKCoreKit'", which seems to be a bug related to the framework itself. To overcome this error add the Facebook frameworks manually to the project.
