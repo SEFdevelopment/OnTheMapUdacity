@@ -199,9 +199,9 @@ extension PostViewController: ParseClientListener {
     // MARK: - Notifications
     func subscribeToParseClientNotifications() {
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "dismissPostScene:", name: Notifications.didFinishUpdatingStudentLocation.rawValue, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PostViewController.dismissPostScene(_:)), name: Notifications.didFinishUpdatingStudentLocation.rawValue, object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "dismissPostScene:", name: Notifications.didFinishPostingStudentLocation.rawValue, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PostViewController.dismissPostScene(_:)), name: Notifications.didFinishPostingStudentLocation.rawValue, object: nil)
         
     }
     

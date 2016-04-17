@@ -225,9 +225,9 @@ extension MapViewController: ParseClientListener {
     // MARK: - Notifications
     func subscribeToParseClientNotifications() {
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didFinishGettingStudentLocations:", name: Notifications.didFinishGettingStudentLocations.rawValue, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MapViewController.didFinishGettingStudentLocations(_:)), name: Notifications.didFinishGettingStudentLocations.rawValue, object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "refreshStudentLocations", name: Notifications.shouldRefreshStudentLocations.rawValue, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ParseClientListener.refreshStudentLocations), name: Notifications.shouldRefreshStudentLocations.rawValue, object: nil)
         
         
     }
